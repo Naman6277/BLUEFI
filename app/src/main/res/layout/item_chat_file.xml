@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="14dp"
+        app:cardElevation="2dp"
+        app:cardBackgroundColor="@color/card_container">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- Extension Badge / Icon -->
+                <TextView
+                    android:id="@+id/tvFileExtensionBadge"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/avatar_circle_bg"
+                    android:gravity="center"
+                    android:text="PDF"
+                    android:textColor="@color/fast_electric_blue"
+                    android:textStyle="bold"
+                    android:textSize="12sp" />
+
+                <!-- File Name & Size -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvFileName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="document.pdf"
+                        android:textColor="@color/text_primary"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:maxLines="1"
+                        android:ellipsize="middle" />
+
+                    <TextView
+                        android:id="@+id/tvFileSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="2.4 MB"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <!-- Dedicated Save to Phone Storage Button -->
+                <ImageButton
+                    android:id="@+id/btnSaveToPhone"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/avatar_circle_bg"
+                    android:src="@drawable/ic_download"
+                    app:tint="@color/fast_electric_blue"
+                    android:contentDescription="Save to Phone Storage" />
+
+            </LinearLayout>
+
+            <!-- Real-Time Progress Layout (Visible during download) -->
+            <LinearLayout
+                android:id="@+id/layoutFileProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvProgressStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Downloading... 65%"
+                    android:textColor="@color/fast_electric_blue"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <ProgressBar
+                    android:id="@+id/pbFileTransfer"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="4dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressTint="@color/fast_electric_blue" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

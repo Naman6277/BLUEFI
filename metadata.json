@@ -1,0 +1,6 @@
+{
+  "name": "Bluefi",
+  "description": "Offline peer-to-peer Bluetooth and Wi-Fi mesh messenger with end-to-end encryption",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

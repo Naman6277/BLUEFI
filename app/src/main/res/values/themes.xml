@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MyApplication" parent="android:Theme.DeviceDefault.NoActionBar" />
+
+    <!-- 1. Classic Dark Navy Slate (Default): Background #0F172A | Cards #1E293B | Accent #2563EB -->
+    <style name="Theme.MyApplication.ClassicNavy" parent="android:Theme.DeviceDefault.NoActionBar">
+        <item name="android:windowBackground">@color/deep_slate_navy</item>
+        <item name="android:statusBarColor">@color/deep_slate_navy</item>
+        <item name="android:navigationBarColor">@color/deep_slate_navy</item>
+    </style>
+
+    <!-- 2. Jet Black Cyber: Background #0A0A0A | Cards #18181B | Accent #FF2D95 -->
+    <style name="Theme.MyApplication.JetBlack" parent="android:Theme.DeviceDefault.NoActionBar">
+        <item name="android:windowBackground">@color/jet_black</item>
+        <item name="android:statusBarColor">@color/jet_black</item>
+        <item name="android:navigationBarColor">@color/jet_black</item>
+    </style>
+
+    <!-- 3. Cerulean Blue: Background #002B36 | Cards #004052 | Accent #007BA7 -->
+    <style name="Theme.MyApplication.Cerulean" parent="android:Theme.DeviceDefault.NoActionBar">
+        <item name="android:windowBackground">@color/cerulean_blue</item>
+        <item name="android:statusBarColor">@color/cerulean_blue</item>
+        <item name="android:navigationBarColor">@color/cerulean_blue</item>
+    </style>
+
+    <!-- 4. Emerald Mesh (OLED): Background #051A10 | Cards #0A2E1C | Accent #10B981 -->
+    <style name="Theme.MyApplication.Emerald" parent="android:Theme.DeviceDefault.NoActionBar">
+        <item name="android:windowBackground">@color/canvas_background</item>
+        <item name="android:statusBarColor">@color/canvas_background</item>
+        <item name="android:navigationBarColor">@color/canvas_background</item>
+    </style>
+</resources>

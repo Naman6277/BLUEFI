@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Central Spine -->
+    <path
+        android:pathData="M48,22L48,86"
+        android:strokeWidth="2.8"
+        android:strokeColor="#00FF66"
+        android:strokeLineCap="round" />
+
+    <!-- Bluetooth Rune Main Path -->
+    <path
+        android:pathData="M34,34 L62,54 L48,64 L48,22 L62,32 L34,54 L48,64 L48,86 L62,76 L34,54"
+        android:strokeWidth="2.4"
+        android:strokeColor="#00FF66"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+
+    <!-- Dragonfly Upper Wing Facets -->
+    <path
+        android:pathData="M48,32 L22,27 L38,44"
+        android:strokeWidth="2"
+        android:strokeColor="#39FF14"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M48,32 L74,27 L58,44"
+        android:strokeWidth="2"
+        android:strokeColor="#39FF14"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+
+    <!-- Dragonfly Lower Wing Facets -->
+    <path
+        android:pathData="M48,76 L22,81 L38,64"
+        android:strokeWidth="2"
+        android:strokeColor="#39FF14"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M48,76 L74,81 L58,64"
+        android:strokeWidth="2"
+        android:strokeColor="#39FF14"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+
+    <!-- Cryptographic E2EE Shield / Core Lock -->
+    <path
+        android:pathData="M48,51m-3.5,0a3.5,3.5 0 1,0 7,0a3.5,3.5 0 1,0 -7,0"
+        android:fillColor="#00FF66" />
+    <path
+        android:pathData="M45,54h6v5h-6z"
+        android:fillColor="#00E676" />
+
+    <!-- 3 Radio Wave Emission Arcs (Mesh Carrier Waves) -->
+    <!-- Wave 1 (Inner) -->
+    <path
+        android:pathData="M68,44C73,47 75,51 75,54C75,57 73,61 68,64"
+        android:strokeWidth="2.5"
+        android:strokeColor="#00FF66"
+        android:strokeLineCap="round" />
+
+    <!-- Wave 2 (Middle) -->
+    <path
+        android:pathData="M76,38C83,43 85,48 85,54C85,60 83,65 76,70"
+        android:strokeWidth="2.5"
+        android:strokeColor="#00FF66"
+        android:strokeLineCap="round" />
+
+    <!-- Wave 3 (Outer) -->
+    <path
+        android:pathData="M84,32C93,39 96,46 96,54C96,62 93,69 84,76"
+        android:strokeWidth="2.5"
+        android:strokeColor="#00FF66"
+        android:strokeLineCap="round" />
+</vector>

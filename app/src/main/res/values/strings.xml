@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Bluefi</string>
+    <string name="title_about">About</string>
+    <string name="summary_about">App details, tech architecture, and developer profile</string>
+</resources>
